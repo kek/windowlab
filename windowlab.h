@@ -83,7 +83,7 @@ typedef struct PropMwmHints
 #ifdef XFT
 #define DEF_FONT "-bitstream-bitstream vera sans-medium-r-*-*-*-100-*-*-*-*-*-*"
 #else
-#define DEF_FONT "-b&h-lucida-medium-r-*-*-10-*-*-*-*-*-*-*"
+#define DEF_FONT "fixed"
 #endif
 
 // use named colours, #rgb, #rrggbb or #rrrgggbbb format
@@ -103,8 +103,8 @@ typedef struct PropMwmHints
 #define MODIFIER Mod1Mask
 
 // keys may be used by other apps, so change them here
-#define KEY_CYCLEPREV XK_Tab
-#define KEY_CYCLENEXT XK_q
+#define KEY_CYCLEPREV XK_section
+#define KEY_CYCLENEXT XK_F10
 #define KEY_FULLSCREEN XK_F11
 #define KEY_TOGGLEZ XK_F12
 
@@ -181,7 +181,7 @@ typedef struct PropMwmHints
 /* This structure keeps track of top-level windows (hereinafter
  * 'clients'). The clients we know about (i.e. all that don't set
  * override-redirect) are kept track of in linked list starting at the
- * global pointer called, appropriately, 'clients'. 
+ * global pointer called, appropriately, 'clients'.
  *
  * window and parent refer to the actual client window and the larger
  * frame into which we will reparent it respectively. trans is set to
